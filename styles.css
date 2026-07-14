@@ -1,0 +1,53 @@
+:root{
+  --bg:#f7f7f8;
+  --card:#ffffff;
+  --accent:#0b74de;
+  --text:#222;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:960px;margin:24px auto;padding:0 16px}
+.site-header{background:linear-gradient(90deg, #fff, #f8fbff);border-bottom:1px solid #e6e9ee}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:20px}
+.profile .name{margin:0;font-size:1.6rem}
+.profile .role{margin:4px 0 0;color:#555}
+.contact p{margin:2px 0;font-size:0.95rem}
+.contact a{color:var(--accent);text-decoration:none}
+.card{background:var(--card);padding:18px;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06);margin-bottom:16px}
+.section h2{margin:0 0 8px;font-size:1.1rem}
+.meta{color:#666;font-size:0.95rem;margin:4px 0}
+.item h3{margin:0 0 6px}
+.site-footer{padding:18px 0;color:#666;font-size:0.9rem;border-top:1px solid #e9eef6;background:transparent}
+
+/* Layout: switch header to column on small screens */
+@media (max-width:720px){
+  .header-inner{flex-direction:column;align-items:flex-start;gap:12px}
+  .container{margin:12px auto;padding:0 12px}
+}
+
+/* Two-column layout for main sections on wide screens */
+@media (min-width:900px){
+  main.container{display:grid;grid-template-columns:2fr 1fr;gap:20px}
+  /* Make certain sections span full width */
+  #about,#projects{grid-column:1/-1}
+}
+
+/* Bulma adjustments */
+.hero.is-link{background-image:linear-gradient(120deg,#0b74de 0%, #0b9ede 100%)}
+.hero .title{font-weight:700}
+.card{border:1px solid rgba(16,24,40,0.04)}
+.tags{margin-top:8px}
+.tags .tag{margin-bottom:6px}
+.item .meta{font-style:italic}
+.image.is-96x96 img{object-fit:cover}
+
+/* Utility */
+a{color:var(--accent)}
+ul{padding-left:1.2rem}

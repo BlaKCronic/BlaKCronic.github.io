@@ -1,12 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    
-</body>
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Currículum — Christian Eduardo Ponce González</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="hero is-link is-bold">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96 is-hidden-mobile">
+                                        <img class="is-rounded" src="https://via.placeholder.com/160" alt="Foto" />
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-3 has-text-white">Christian Eduardo Ponce González</p>
+                                    <p class="subtitle is-6 has-text-white-ter">Desarrollador Web · Front-End · Software</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-narrow has-text-right is-hidden-touch">
+                            <div class="buttons">
+                                <a class="button is-light" href="mailto:chris_ptn117@proton.me"><span class="icon"><i class="fa-regular fa-envelope"></i></span><span>Contactar</span></a>
+                                <a class="button is-primary" href="#"><span class="icon"><i class="fa-solid fa-download"></i></span><span>Descargar CV</span></a>
+                            </div>
+                            <div class="contact has-text-white-ter" style="margin-top:8px">
+                                <p><span class="icon"><i class="fa-solid fa-globe"></i></span> <a class="has-text-white-ter" href="https://society-azure.vercel.app/">Yañez Society</a></p>
+                                <p><span class="icon"><i class="fa-solid fa-phone"></i></span> +52 461 343 4260</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="columns">
+                <div class="column is-two-thirds">
+                    <section id="about" class="section card">
+                        <h2 class="title is-4">Sobre mí</h2>
+                        <p>Estudiante de Ingeniería en Sistemas Computacionales en el Tecnológico Nacional de México, campus Celaya.
+                            Actualmente participo en el desarrollo de software y aplicaciones web como parte de una empresa fundada junto
+                            con otros desarrolladores.
+                            Me especializo e interés principalmente en el desarrollo Front-End y en la creación de soluciones de software,
+                            buscando fortalecer continuamente mis habilidades técnicas y contribuir a proyectos innovadores.</p>
+                    </section>
+
+                    <section id="experience" class="section card">
+                        <h2 class="title is-4">Experiencia</h2>
+                        <article class="item">
+                            <h3 class="subtitle is-6">Nombre de la empresa — Puesto</h3>
+                            <p class="meta">Ene 2020 — Presente</p>
+                            <p>Responsabilidades y logros principales en forma de frases concisas.</p>
+                        </article>
+                    </section>
+
+                    <section id="projects" class="section card">
+                        <h2 class="title is-4">Proyectos</h2>
+                        <ul>
+                            <li><strong>Proyecto A:</strong> Descripción corta y enlace.</li>
+                            <li><strong>Proyecto B:</strong> Descripción corta y enlace.</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="column">
+                    <section id="education" class="section card">
+                        <h2 class="title is-5">Educación</h2>
+                        <article class="item">
+                            <h3 class="subtitle is-6">Nombre del título — Centro</h3>
+                            <p class="meta">2015 — 2019</p>
+                            <p>Notas relevantes o especialización.</p>
+                        </article>
+                    </section>
+
+                    <section id="skills" class="section card">
+                        <h2 class="title is-5">Habilidades</h2>
+                        <p>Lista de habilidades: HTML, CSS, JavaScript, Python, etc.</p>
+                    </section>
+
+                    <section id="contact" class="section card">
+                        <h2 class="title is-5">Contacto</h2>
+                        <p>¿Quieres contratarme? Escríbeme a <a href="mailto:chris_ptn117@proton.me">chris_ptn117@proton.me</a></p>
+                        <p><a href="#">Descargar PDF del CV</a> (enlace de ejemplo)</p>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>© <span id="year"></span> Christian Eduardo Ponce González — CV creado con HTML/CSS</p>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </body>
 </html>
