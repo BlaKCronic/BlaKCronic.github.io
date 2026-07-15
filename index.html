@@ -4,103 +4,203 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Currículum — Christian Eduardo Ponce González</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header class="hero is-link is-bold">
-            <div class="hero-body">
-                <div class="container">
-                    <div class="columns is-vcentered">
-                        <div class="column">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96 is-hidden-mobile">
-                                        <img class="is-rounded" src="https://via.placeholder.com/160" alt="Foto" />
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-3 has-text-white">Christian Eduardo Ponce González</p>
-                                    <p class="subtitle is-6 has-text-white-ter">Desarrollador Web · Front-End · Software</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-narrow has-text-right is-hidden-touch">
-                            <div class="buttons">
-                                <a class="button is-light" href="mailto:chris_ptn117@proton.me"><span class="icon"><i class="fa-regular fa-envelope"></i></span><span>Contactar</span></a>
-                                <a class="button is-primary" href="#"><span class="icon"><i class="fa-solid fa-download"></i></span><span>Descargar CV</span></a>
-                            </div>
-                            <div class="contact has-text-white-ter" style="margin-top:8px">
-                                <p><span class="icon"><i class="fa-solid fa-globe"></i></span> <a class="has-text-white-ter" href="https://society-azure.vercel.app/">Yañez Society</a></p>
-                                <p><span class="icon"><i class="fa-solid fa-phone"></i></span> +52 461 343 4260</p>
-                            </div>
-                        </div>
+        <div class="editor">
+            <div class="titlebar">
+                <div class="dots"><span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="tabs">
+                    <div class="tab active">
+                        <i class="fa-regular fa-file-code"></i> curriculum.tsx
                     </div>
                 </div>
-            </div>
-        </header>
-
-        <main class="container">
-            <div class="columns">
-                <div class="column is-two-thirds">
-                    <section id="about" class="section card">
-                        <h2 class="title is-4">Sobre mí</h2>
-                        <p>Estudiante de Ingeniería en Sistemas Computacionales en el Tecnológico Nacional de México, campus Celaya.
-                            Actualmente participo en el desarrollo de software y aplicaciones web como parte de una empresa fundada junto
-                            con otros desarrolladores.
-                            Me especializo e interés principalmente en el desarrollo Front-End y en la creación de soluciones de software,
-                            buscando fortalecer continuamente mis habilidades técnicas y contribuir a proyectos innovadores.</p>
-                    </section>
-
-                    <section id="experience" class="section card">
-                        <h2 class="title is-4">Experiencia</h2>
-                        <article class="item">
-                            <h3 class="subtitle is-6">Nombre de la empresa — Puesto</h3>
-                            <p class="meta">Ene 2020 — Presente</p>
-                            <p>Responsabilidades y logros principales en forma de frases concisas.</p>
-                        </article>
-                    </section>
-
-                    <section id="projects" class="section card">
-                        <h2 class="title is-4">Proyectos</h2>
-                        <ul>
-                            <li><strong>Proyecto A:</strong> Descripción corta y enlace.</li>
-                            <li><strong>Proyecto B:</strong> Descripción corta y enlace.</li>
-                        </ul>
-                    </section>
-                </div>
-
-                <div class="column">
-                    <section id="education" class="section card">
-                        <h2 class="title is-5">Educación</h2>
-                        <article class="item">
-                            <h3 class="subtitle is-6">Nombre del título — Centro</h3>
-                            <p class="meta">2015 — 2019</p>
-                            <p>Notas relevantes o especialización.</p>
-                        </article>
-                    </section>
-
-                    <section id="skills" class="section card">
-                        <h2 class="title is-5">Habilidades</h2>
-                        <p>Lista de habilidades: HTML, CSS, JavaScript, Python, etc.</p>
-                    </section>
-
-                    <section id="contact" class="section card">
-                        <h2 class="title is-5">Contacto</h2>
-                        <p>¿Quieres contratarme? Escríbeme a <a href="mailto:chris_ptn117@proton.me">chris_ptn117@proton.me</a></p>
-                        <p><a href="#">Descargar PDF del CV</a> (enlace de ejemplo)</p>
-                    </section>
+                <div class="titlebar-actions">
+                    <a class="tb-btn" href="mailto:chris_ptn117@proton.me" title="Enviar correo">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    <a class="tb-btn primary" href="#" title="Descargar CV">
+                        <i class="fa-solid fa-download"></i> Descargar
+                    </a>
                 </div>
             </div>
-        </main>
+            <div class="editor-body">
+                <div class="gutter" aria-hidden="true">
+                </div>
+                <div class="code">
+                    <header class="head">
+                        <p class="line c-comment">// perfil
+                        </p>
+                        <div class="head-row">
+                            <figure class="avatar">
+                                <img src="img/foto.JPG" alt="Foto de Christian Eduardo Ponce González" />
+                            </figure>
+                            <div class="head-info">
+                                <p class="code-line">
+                                    <span class="c-kw">const</span> 
+                                    <span class="c-var">desarrollador</span> 
+                                    <span class="c-op">=</span> <span class="c-brace">{</span>
+                                    </p>
+                                <p class="code-line indent"><span class="c-key">nombre</span>
+                                    <span class="c-op">:</span> <span class="c-str">"Christian Eduardo Ponce González"</span>
+                                    <span class="c-op">,</span>
+                                </p>
+                                <p class="code-line indent">
+                                    <span class="c-key">rol</span>
+                                    <span class="c-op">:</span>
+                                    <span class="c-str">"Desarrollador Front-End · Software"</span>
+                                    <span class="c-op">,</span>
+                                </p>
+                                <p class="code-line indent">
+                                    <span class="c-key">ubicacion</span>
+                                    <span class="c-op">:</span>
+                                    <span class="c-str">"Celaya, Guanajuato, MX"</span>
+                                    <span class="c-op">,</span>
+                                </p>
+                                <p class="code-line"><span class="c-brace">}</span>
+                                </p>
+                                <div class="contact-chips">
+                                    <a class="chip" href="mailto:chris_ptn117@proton.me">
+                                        <i class="fa-regular fa-envelope"></i> chris_ptn117@proton.me
+                                    </a>
+                                    <a class="chip" href="tel:+524613434260">
+                                        <i class="fa-solid fa-phone"></i> +52 461 343 4260
+                                    </a>
+                                    <a class="chip" href="https://society-azure.vercel.app/" target="_blank" rel="noopener">
+                                        <i class="fa-solid fa-globe"></i> Yañez Society
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="grid">
+                        <div class="col-main">
+                            <section id="about" class="block">
+                                <p class="line c-comment">/**<br>&nbsp;* Sobre mí<br>&nbsp;*/</p>
+                                <p class="prose">Estudiante de Ingeniería en Sistemas Computacionales en el Tecnológico Nacional de México, campus Celaya.
+                                    Actualmente participo en el desarrollo de software y aplicaciones web como parte de una empresa fundada junto
+                                    con otros desarrolladores. Me especializo e interés principalmente en el desarrollo Front-End y en la creación
+                                    de soluciones de software, buscando fortalecer continuamente mis habilidades técnicas y contribuir a proyectos innovadores.
+                                </p>
+                            </section>
+                            <section id="experience" class="block">
+                                <p class="line c-comment">// experiencia</p>
+                                <p class="code-line"><span class="c-kw">function</span>
+                                    <span class="c-fn">experiencia</span>
+                                    <span class="c-brace">() {</span>
+                                </p>
+                                <article class="entry">
+                                    <div class="entry-head">
+                                        <h3><span class="c-key">empresa</span>
+                                            <span class="c-op">:</span>
+                                            <span class="c-str">"Yañez Society"</span>
+                                        </h3>
+                                        <span class="tag-date">NOV 2025 — Presente</span>
+                                    </div>
+                                    <p class="entry-role">Programador</p>
+                                    <p class="prose small">Desarrollo de software y aplicaciones web dentro de una empresa cofundada con otros desarrolladores, colaborando en la construcción de productos digitales de principio a fin.</p>
+                                </article>
+                                <p class="code-line"><span class="c-brace">}</span></p>
+                            </section>
+                        </div>
+                        <aside class="col-side">
+                            <section id="education" class="block">
+                                <p class="line c-comment">// educación</p>
+                                <article class="entry compact">
+                                    <h3 class="entry-title">Ingeniería en Sistemas Computacionales</h3>
+                                    <span class="tag-date">2022 — Presente</span>
+                                    <p class="prose small">Tecnológico Nacional de México, campus Celaya · Énfasis en Front-End Development.</p>
+                                </article>
+                            </section>
+                            <section id="skills" class="block">
+                                <p class="line c-comment">// habilidades</p>
+                                <ul class="skill-list">
+                                    <li class="skill-row">
+                                        <div class="skill-top">
+                                            <span class="skill-name">HTML</span>
+                                            <span class="skill-badge level-intermedio">Intermedio</span>
+                                        </div>
+                                        <div class="skill-bar"><span style="width:65%"></span></div>
+                                    </li>
+                                    <li class="skill-row">
+                                        <div class="skill-top">
+                                            <span class="skill-name">CSS</span>
+                                            <span class="skill-badge level-intermedio">Intermedio</span>
+                                        </div>
+                                        <div class="skill-bar"><span style="width:65%"></span></div>
+                                    </li>
+                                    <li class="skill-row">
+                                        <div class="skill-top">
+                                            <span class="skill-name">JavaScript</span>
+                                            <span class="skill-badge level-intermedio">Intermedio</span>
+                                        </div>
+                                        <div class="skill-bar"><span style="width:65%"></span></div>
+                                    </li>
+                                    <li class="skill-row">
+                                        <div class="skill-top">
+                                            <span class="skill-name">React</span>
+                                            <span class="skill-badge level-intermedio">Intermedio</span>
+                                        </div>
+                                        <div class="skill-bar"><span style="width:65%"></span></div>
+                                    </li>
+                                    <li class="skill-row">
+                                        <div class="skill-top">
+                                            <span class="skill-name">Vue</span>
+                                            <span class="skill-badge level-intermedio">Intermedio</span>
+                                        </div>
+                                        <div class="skill-bar"><span style="width:65%"></span></div>
+                                    </li>
+                                    <li class="skill-row">
+                                        <div class="skill-top">
+                                            <span class="skill-name">Tailwind CSS</span>
+                                            <span class="skill-badge level-intermedio">Intermedio</span>
+                                        </div>
+                                        <div class="skill-bar"><span style="width:65%"></span></div>
+                                    </li>
+                                    <li class="skill-row">
+                                        <div class="skill-top">
+                                            <span class="skill-name">Python</span>
+                                            <span class="skill-badge level-bajo">Bajo</span>
+                                        </div>
+                                        <div class="skill-bar"><span style="width:30%"></span></div>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section id="languages" class="block">
+                                <p class="line c-comment">// idiomas</p>
+                                <ul class="language-list">
+                                    <li class="language-item">
+                                        <span>Español</span>
+                                        <span class="skill-badge level-experto">Nativo</span>
+                                    </li>
+                                    <li class="language-item">
+                                        <span>Inglés</span>
+                                        <span class="skill-badge level-avanzado">C1</span>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section id="contact" class="block">
+                                <p class="line c-comment">// contacto</p>
+                                <p class="prose small">¿Quieres contratarme? Escríbeme a
+                                    <a href="mailto:chris_ptn117@proton.me">chris_ptn117@proton.me</a>
+                                </p>
+                                <a class="chip full" href="#">
+                                    <i class="fa-regular fa-file-pdf"></i> Descargar PDF del CV
+                                </a>
+                            </section>
+                        </aside>
+                    </div>
+                    <p class="line c-comment">// fin del archivo — <span id="year"></span> © Christian Eduardo Ponce González</p>
 
-        <footer class="site-footer">
-            <div class="container">
-                <p>© <span id="year"></span> Christian Eduardo Ponce González — CV creado con HTML/CSS</p>
+                </div>
             </div>
-        </footer>
-
+        </div>
         <script>
             document.getElementById('year').textContent = new Date().getFullYear();
         </script>
